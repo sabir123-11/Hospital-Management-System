@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | City Care Hospital</title>
+<meta name="description" content="City Care Hospital — compassionate, modern healthcare for the whole family.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- Custom Styles -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Loading Spinner -->
+<div id="pageLoader">
+  <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+</div>
+
+<!-- Top utility strip -->
+<div class="top-strip py-1">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <div class="d-none d-md-flex gap-3">
+      <span><i class="bi bi-clock me-1"></i>Mon–Sat: 8:00 AM – 9:00 PM</span>
+      <span><i class="bi bi-geo-alt me-1"></i>12 Wellness Avenue, Cuttack, Odisha</span>
+    </div>
+    <div class="d-flex gap-3 ms-auto">
+      <a href="tel:+911234567890"><i class="bi bi-telephone-fill me-1"></i>+91 12345 67890</a>
+      <a href="login.html">Patient Login</a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-hospital sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-mark"><i class="bi bi-heart-pulse-fill"></i></span>
+      City Care Hospital
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainOffcanvas" aria-controls="mainOffcanvas">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="d-none d-lg-flex align-items-center ms-auto">
+      <ul class="navbar-nav flex-row gap-1 me-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="departments.html">Departments</a></li>
+        <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+            <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a class="dropdown-item" href="terms.html">Terms &amp; Conditions</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="register.html">Register</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <button id="themeToggle" class="btn btn-sm btn-outline-hospital rounded-circle me-2" title="Toggle theme" style="width:38px;height:38px;">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+      <a href="appointment.html" class="btn btn-appt"><i class="bi bi-calendar2-check me-1"></i>Book Appointment</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Offcanvas Mobile Menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mainOffcanvas">
+  <div class="offcanvas-header">
+    <h5 class="navbar-brand mb-0"><span class="brand-mark"><i class="bi bi-heart-pulse-fill"></i></span> City Care</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-2">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="departments.html">Departments</a></li>
+      <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+      <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+      <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="login.html">Patient Login</a></li>
+      <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+    </ul>
+    <a href="appointment.html" class="btn btn-appt w-100 mt-4">Book Appointment</a>
+  </div>
+</div>
+<div class="page-banner">
+  <div class="container">
+    <h1>About Us</h1>
+    <nav aria-label="breadcrumb"><ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active">About Us</li>
+    </ol></nav>
+  </div>
+</div>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="eyebrow mb-2">Introduction</div>
+        <h2 class="section-title mb-4">A hospital built around the patient, not the paperwork.</h2>
+        <p>Founded in 2004 as a 40-bed community clinic, City Care Hospital has grown into a 300-bed multi-specialty referral centre serving Cuttack and the surrounding region. Every expansion — a new wing, a new department, a new piece of equipment — has been guided by one question: does this help a patient get better care, faster?</p>
+        <p>Today our campus houses 18 specialty departments, a Level-3 ICU, a 24x7 emergency trauma centre, and a diagnostics lab accredited for same-day reporting.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/about/hospital.jpg" class="img-fluid rounded-hospital shadow-sm" alt="City Care Hospital campus">
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="vitals-divider" viewBox="0 0 1200 46" preserveAspectRatio="none"><path d="M0 23 H400 L430 5 L460 41 L490 23 H1200"/></svg>
+
+<section class="section-pad bg-soft">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-hospital p-4 h-100">
+          <div class="card-icon-wrap mb-3"><i class="bi bi-eye"></i></div>
+          <h5>Our Vision</h5>
+          <p class="text-secondary small mb-0">To be the region's most trusted healthcare provider, recognised for clinical excellence and genuine compassion.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-hospital p-4 h-100">
+          <div class="card-icon-wrap mb-3"><i class="bi bi-bullseye"></i></div>
+          <h5>Our Mission</h5>
+          <p class="text-secondary small mb-0">To deliver accessible, evidence-based care through skilled specialists, modern technology and transparent communication.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-hospital p-4 h-100">
+          <div class="card-icon-wrap mb-3"><i class="bi bi-heart"></i></div>
+          <h5>Our Core Values</h5>
+          <p class="text-secondary small mb-0">Compassion, Integrity, Excellence, Teamwork and Accountability guide every decision we make.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 order-lg-2">
+        <img src="images/about/director.jpg" class="img-fluid rounded-hospital shadow-sm" alt="Hospital director">
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <div class="eyebrow mb-2">Leadership</div>
+        <h2 class="section-title mb-4">Director's Message</h2>
+        <p>"When we opened our doors in 2004, we made a promise to treat every patient as we would our own family. Two decades and 300 beds later, that promise hasn't changed — only our ability to keep it has grown."</p>
+        <p class="fw-semibold mb-0">Dr. Sunita Behera</p>
+        <p class="small text-secondary">Founder &amp; Medical Director</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad bg-soft">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="eyebrow mb-2">Facilities</div>
+        <h2 class="section-title mb-4">Infrastructure built for critical moments</h2>
+        <ul class="list-group list-group-flush rounded-hospital overflow-hidden">
+          <li class="list-group-item d-flex justify-content-between align-items-center">Level-3 Intensive Care Unit <i class="bi bi-check2-circle text-primary-c"></i></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">24x7 Trauma &amp; Emergency Centre <i class="bi bi-check2-circle text-primary-c"></i></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">6 Modular Operation Theatres <i class="bi bi-check2-circle text-primary-c"></i></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">NABL-Accredited Diagnostics Lab <i class="bi bi-check2-circle text-primary-c"></i></li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">In-House 24x7 Pharmacy <i class="bi bi-check2-circle text-primary-c"></i></li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/about/infrastructue.jpg" class="img-fluid rounded-hospital shadow-sm" alt="Hospital infrastructure">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="eyebrow mb-2">Milestones</div>
+      <h2 class="section-title center-title d-inline-block">Our History</h2>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3">
+        <h3 class="text-primary-c">2004</h3>
+        <p class="small text-secondary">Founded as a 40-bed clinic</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <h3 class="text-primary-c">2011</h3>
+        <p class="small text-secondary">Emergency &amp; Trauma Centre opens</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <h3 class="text-primary-c">2018</h3>
+        <p class="small text-secondary">NABH accreditation achieved</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <h3 class="text-primary-c">2026</h3>
+        <p class="small text-secondary">300-bed campus, 18 departments</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad bg-soft">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-md-3 col-6">
+        <i class="bi bi-award fs-1 text-accent-c"></i>
+        <h6 class="mt-2 mb-0">NABH Accredited</h6>
+      </div>
+      <div class="col-md-3 col-6">
+        <i class="bi bi-patch-check fs-1 text-accent-c"></i>
+        <h6 class="mt-2 mb-0">ISO 9001:2015 Certified</h6>
+      </div>
+      <div class="col-md-3 col-6">
+        <i class="bi bi-trophy fs-1 text-accent-c"></i>
+        <h6 class="mt-2 mb-0">Best Regional Hospital 2025</h6>
+      </div>
+      <div class="col-md-3 col-6">
+        <i class="bi bi-people fs-1 text-accent-c"></i>
+        <h6 class="mt-2 mb-0">45,000+ Patients Yearly</h6>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="site-footer pt-5 pb-0 mt-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <h5 class="d-flex align-items-center gap-2"><i class="bi bi-heart-pulse-fill text-accent-c"></i> City Care Hospital</h5>
+        <p class="mt-3">A multi-specialty hospital dedicated to compassionate, evidence-based care — trusted by families across the region for over two decades.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-circle"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-circle"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-circle"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-circle"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2"><a href="about.html"><i class="bi bi-chevron-right small me-1"></i>About Us</a></li>
+          <li class="mb-2"><a href="departments.html"><i class="bi bi-chevron-right small me-1"></i>Departments</a></li>
+          <li class="mb-2"><a href="doctors.html"><i class="bi bi-chevron-right small me-1"></i>Our Doctors</a></li>
+          <li class="mb-2"><a href="gallery.html"><i class="bi bi-chevron-right small me-1"></i>Gallery</a></li>
+          <li class="mb-2"><a href="blog.html"><i class="bi bi-chevron-right small me-1"></i>Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Patient Info</h5>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2"><a href="appointment.html"><i class="bi bi-chevron-right small me-1"></i>Book Appointment</a></li>
+          <li class="mb-2"><a href="faq.html"><i class="bi bi-chevron-right small me-1"></i>FAQs</a></li>
+          <li class="mb-2"><a href="careers.html"><i class="bi bi-chevron-right small me-1"></i>Careers</a></li>
+          <li class="mb-2"><a href="privacy-policy.html"><i class="bi bi-chevron-right small me-1"></i>Privacy Policy</a></li>
+          <li class="mb-2"><a href="terms.html"><i class="bi bi-chevron-right small me-1"></i>Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Contact</h5>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>12 Wellness Avenue, Cuttack, Odisha</li>
+          <li class="mb-2"><i class="bi bi-telephone me-2"></i><a href="tel:+911234567890">+91 12345 67890</a></li>
+          <li class="mb-2"><i class="bi bi-envelope me-2"></i><a href="mailto:care@citycarehospital.in">care@citycarehospital.in</a></li>
+          <li class="mb-2"><i class="bi bi-exclamation-triangle-fill text-accent-c me-2"></i>Emergency: 24x7</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom mt-5 py-3">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span>&copy; 2026 City Care Hospital. All rights reserved.</span>
+      <span id="liveClock" class="font-mono"></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button id="scrollTopBtn" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Form success toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:1080;">
+  <div id="formSuccessToast" class="toast align-items-center text-bg-success border-0" role="alert">
+    <div class="d-flex">
+      <div class="toast-body"><i class="bi bi-check-circle me-2"></i>Form submitted successfully!</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom Script -->
+<script src="js/script.js"></script>
+</body>
+</html>
